@@ -7,7 +7,7 @@ page 50100 "CSD Seminar Setup"
     Caption = 'Seminar Setup';
     InsertAllowed = false;
     DeleteAllowed = false;
-        
+
     layout
     {
         area(Content)
@@ -21,22 +21,21 @@ page 50100 "CSD Seminar Setup"
                 {
                 }
                 field("Posted Seminar Reg. Nos."; "Posted Seminar Reg. Nos.")
-                {}
+                { }
 
 
             }
         }
     }
-    
-         
-                trigger OnOpenPage();
-                begin
-                    If not get then begin
-                        init;
-                        insert;
-                    end;
-                end;
-            }
-        }
-    }
+
+
+    trigger OnOpenPage();
+    begin
+        If not get then begin
+            init;
+            insert;
+        end;
+    end;
 }
+
+
