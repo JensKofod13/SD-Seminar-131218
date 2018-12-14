@@ -10,4 +10,13 @@ codeunit 50139 EventSubscriptions
       ResLedgerEntry."CSD Seminar No.":=ResJournalLine."CSD Seminar No.";
       ResLedgerEntry."CSD Seminar Registration No.":=ResJournalLine."CSD Seminar Registration No."; 
   end;
+  [EventSubscriber(ObjectType::Page, 344, 'OnAfterNavigateFindRecords', '', true, true)]
+  local procedure ExtendNavigateOnAferNavigateFindRecords()
+  (var DocumentEntry : record "Document Entry");
+  DocNoFilter : Text;
+  
+  begin
+    
+  end;
+  
 }
